@@ -22,6 +22,7 @@ where = ["src"]
 
 [project.scripts]
 todo = "todo.main:app"
+todo-menu = "todo.menu_main:main"
 
 [project.optional-dependencies]
 dev = [
