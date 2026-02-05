@@ -1,0 +1,31 @@
+[project]
+name = "todo-app"
+version = "0.1.0"
+description = "A clean, user-friendly, command-line based Todo application that stores all data in memory."
+authors = [
+    {name = "TODO-Hackthon", email = "todo@example.com"},
+]
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "pytest>=7.0.0",
+]
+readme = "README.md"
+requires-python = ">= 3.13"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+todo = "todo.main:app"
+
+[project.optional-dependencies]
+dev = [
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
