@@ -30,12 +30,17 @@ A clean, user-friendly, command-line based Todo application that stores all data
 
 Once installed, you can use the `todo` command from anywhere in your terminal:
 
-### Adding a new todo
+### Command-Line Interface
+```bash
+todo --help
+```
+
+#### Adding a new todo
 ```bash
 todo add "Buy groceries" --description "Milk and bread"
 ```
 
-### Listing all todos
+#### Listing all todos
 ```bash
 todo list
 ```
@@ -52,26 +57,48 @@ todo list --sort created
 todo list --sort title
 ```
 
-### Viewing a specific todo
+#### Viewing a specific todo
 ```bash
 todo show 1
 ```
 
-### Updating a todo
+#### Updating a todo
 ```bash
 todo update 1 --title "Buy food" --description "Milk, bread, and eggs"
 todo update 1 --status completed
 ```
 
-### Marking a todo as complete
+#### Marking a todo as complete
 ```bash
 todo complete 1
 ```
 
-### Deleting a todo
+#### Deleting a todo
 ```bash
 todo delete 1
 ```
+
+### Menu-Driven Interface (Beginner-Friendly)
+For a more user-friendly experience, you can use the menu-driven interface:
+
+```bash
+todo-menu
+```
+
+This will launch an interactive menu with the following options:
+```
+--- Todo Application ---
+1. Add Task
+2. View All Tasks
+3. Update Task
+4. Delete Task
+5. Mark Task Complete
+6. Mark Task Incomplete
+7. Exit
+------------------------
+```
+
+Simply enter the number of the option you want to use, and follow the prompts.
 
 ### Getting help
 ```bash
